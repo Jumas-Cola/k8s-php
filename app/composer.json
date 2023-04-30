@@ -1,0 +1,15 @@
+{
+    "name": "jumas-cola/k8s-php",
+    "autoload": {
+        "psr-4": {
+            "JumasCola\\K8sPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jumas",
+            "email": "kbbyfl91@gmail.com"
+        }
+    ],
+    "require": {}
+}

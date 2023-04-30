@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8s-php-deployment
+  labels:
+    app: k8s-php
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: k8s-php
+  template:
+    metadata:
+      labels:
+        app: k8s-php
+    spec:
+      containers:
+        - name: k8s-php
+          image: jumascola/k8s_php:0.0.4
+          ports:
+            - containerPort: 8080
