@@ -1,2 +1,2 @@
-app/vendor
-.php-cs-fixer.cache
+/app/vendor/
+/app/.php-cs-fixer.cache
