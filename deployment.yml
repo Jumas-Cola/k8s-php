@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: k8s-php
-          image: jumascola/k8s_php:0.0.4
+          image: jumascola/k8s_php:0.0.6
           ports:
             - containerPort: 8080

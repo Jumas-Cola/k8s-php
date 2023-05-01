@@ -1,6 +1,11 @@
 <?php
 
-$serverData = print_r($_SERVER, true);
+require './vendor/autoload.php';
 
-echo "<h1>Hello K8S!</h1>";
-echo "<pre>{$serverData}</pre>";
+use JumasCola\K8sPhp\Classes\GetHelloService;
+
+$getHelloService = new GetHelloService();
+$helloString = $getHelloService->getHelloString();
+
+
+echo "<h1>{$helloString}</h1>";
